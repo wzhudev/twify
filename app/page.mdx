@@ -1,0 +1,55 @@
+---
+title: User Guide
+---
+
+# TWIFY - That's Why I Follow You
+
+<a 
+  href="https://chromewebstore.google.com/detail/elmo/ipnlcfhfdicbfbchfoihipknbaeenenm" 
+  target="_blank" 
+  className="flex rounded-lg w-fit p-2 border text-white items-center text-xl px-8 py-2 font-medium bg-neutral-800 mt-6">
+  <p className="flex items-center"><img alt="chrome-logo" className="w-6 h-6 mr-2" src="/chrome-store.svg"></img>Free on Chrome Web Store</p>
+</a>
+
+You follow people on social media for a reason, but they don’t always post content that you want to read. While we cannot control what others share—that is their freedom—we should have the ability to decide what we see. Our time and attention are limited, and we must use them wisely. Additionally, some individuals leverage their influence to shape discussions on sensitive topics, making it even more important for us to filter the content that reaches us.
+
+**TWIFY** (short for *That's Why I Follow You*) is a Chrome extension designed to help you take control of your social media experience. It uses large language models (LLMs) to analyze posts and determine whether they align with your interests, ensuring that your feed remains relevant and meaningful. In the extension settings, you can specify why you followed someone, and TWIFY will use an LLM to evaluate their posts, dimming those that may not be of interest to you.
+
+By giving you the power to manage what influences you, TWIFY promotes **attention equity**, ensuring that **you** decide what deserves your focus.
+
+Platform supported:
+
+- [X (former Twitter)](https://x.com)
+
+## What does is it look like?
+
+On the Settings page, you can personalize TWIFY to match your preferences by choosing what content you want to see and what you’d prefer to filter out. These settings can be customized for each user you follow. For instance, you might follow @elonmusk and opt to see only updates about Tesla, SpaceX, and his other technology-related topics, while excluding political content.
+
+![options screenshot](/options.png)
+
+As you scroll through your timeline or visit Elon's profile, posts related to politics will be dimmed, helping you focus on the updates that matter most to you.
+
+![effect screenshot](/effect.png)
+
+When you hover on a tweet, you can see the reason why it was dimmed.
+
+## LLMs
+
+For security and simplicity, TWIFY does not include a built-in LLM service. Before using this extension, you'll need to set up your own LLM endpoint and API key.
+
+![llm screenshot](/llm.png)
+
+## FAQ
+
+### Will this extension upload my information to your server?
+
+No, TWIFY only connects to the LLM endpoint you specify in the General Settings. It does not send any additional data elsewhere.
+
+### What LLM does this extension use?
+
+Currently, TWIFY uses gpt-4o-mini, so your LLM provider must support this model. However, an upcoming update will allow you to customize the LLM selection.
+
+### How can I share suggestions with the author?
+
+You can leave a comment in the extension store or reach out to the author via X.
+
