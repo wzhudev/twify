@@ -37,6 +37,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <Layout
           search={null}
           darkMode={false}
+          nextThemes={{
+            defaultTheme: 'light',
+          }}
           sidebar={{ defaultOpen: false, toggleButton: false, }}
           navbar={navbar}
           pageMap={await getPageMap()}
