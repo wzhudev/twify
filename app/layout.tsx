@@ -32,6 +32,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       // ... Your additional head options
       >
         {/* Your additional tags should be passed as `children` of `<Head>` element */}
+        <meta name="google-site-verification" content="yMGH4Aia-fcKe2yAt9Hh5zjkjaw2bHs341OywhePO1Y" />
       </Head>
       <body>
         <Layout
